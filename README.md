@@ -4,14 +4,6 @@ Destiny brings fast-paced, automated battle royale gameplay to your Discord serv
 
 ---
 
-## ⚠️ Important  
-
-**This bot template is exclusively for paid users.** Redistribution, sharing, or resale of the bot or its codebase is strictly prohibited. Each purchase grants a license for single-user or team use.  
-
-> **Do not share. Redistribution violates your license agreement.**  
-
----
-
 ## ✨ Features  
 
 - **Era-Based Battles**: Choose from eras like Modern, Medieval, Futuristic, and more, each with unique items and styles.  
@@ -31,6 +23,75 @@ Destiny brings fast-paced, automated battle royale gameplay to your Discord serv
 
 ---
 
+## 🚀 Getting Started
+
+### 1. **Download or Fork the Repository**
+
+#### **Option 1: Download as a ZIP**
+```
+1. Click the **Code** button on the repository page.
+2. Select **Download ZIP**.
+3. Extract the ZIP file to your desired location.
+```
+
+#### **Option 2: Clone the Repository (Recommended)**
+```sh
+git clone https://github.com/BankkRoll/Discord-Royale-Destiny.git
+```
+
+#### **Option 3: Fork the Repository**
+```
+1. Click the **Fork** button on the repository page.
+2. Navigate to your forked repository.
+3. Clone your fork using:
+```
+
+```sh
+git clone https://github.com/BankkRoll/Discord-Royale-Destiny.git
+```
+
+---
+
+### 2. **Install Dependencies**
+
+Run the following command to install required packages:
+
+```
+npm install
+```
+
+---
+
+### 3. **Set Up Environment Variables**
+
+Create a `.env` file in the root directory and add the following:
+
+```
+# Discord Bot Configuration
+DISCORD_BOT_TOKEN="<your-bot-token>"
+DISCORD_CLIENT_ID="<your-client-id>"
+DISCORD_CLIENT_SECRET="<your-client-secret>"
+```
+
+---
+
+### 4. **Build the Bot**
+
+Run the following command to build the bot:
+
+```
+npm run build
+```
+
+### 5. **Run the Bot**
+
+Run the following command to start the bot:
+
+```
+npm run start
+```
+
+---
 ## ⚙️ Core Features  
 
 # Destiny Bot Command List
@@ -38,7 +99,7 @@ Destiny brings fast-paced, automated battle royale gameplay to your Discord serv
 ### 🛡️ Admin Commands
 Admins configure and control Destiny battles to fit their server's needs.
 
-#### **/set-game**
+#### `/set-game`
 - **Purpose**: Define who can trigger the `/start` command.
 - **Options**:
   - `Everyone`: Anyone in the server can start a battle.
@@ -51,7 +112,7 @@ Admins configure and control Destiny battles to fit their server's needs.
 
 ---
 
-#### **/set-winning-role**
+#### `/set-winning-role`
 - **Purpose**: Assign a role to players who win battles.
 - **Behavior**:
   - Saves the specified role to server settings.
@@ -60,7 +121,7 @@ Admins configure and control Destiny battles to fit their server's needs.
 
 ---
 
-#### **/remove-winning-role**
+#### `/remove-winning-role`
 - **Purpose**: Remove the role assigned to winners of battles.
 - **Behavior**:
   - Clears the saved role from server settings.
@@ -69,7 +130,7 @@ Admins configure and control Destiny battles to fit their server's needs.
 
 ---
 
-#### **/set-timer {duration}**
+#### `/set-timer {duration}`
 - **Purpose**: Set the preparation time before a battle begins.
 - **Options**:
   - `duration`: The countdown time in seconds (between 10 and 600 seconds).
@@ -80,7 +141,7 @@ Admins configure and control Destiny battles to fit their server's needs.
 
 ---
 
-#### **/set-era {era}**
+#### `/set-era {era}`
 - **Purpose**: Set the default era for battles.
 - **Options**:
   - `era`: The name of the era (e.g., `modern`, `futuristic`, `medieval`).
@@ -94,7 +155,7 @@ Admins configure and control Destiny battles to fit their server's needs.
 ### 🧑‍🤝‍🧑 User Commands
 Players interact with the bot to join games, track stats, and compete.
 
-#### **/start {era}**
+#### `/start {era}`
 - **Purpose**: Start a new battle in a specified era.
 - **Behavior**:
   - Displays an interactive embed with:
@@ -109,7 +170,7 @@ Players interact with the bot to join games, track stats, and compete.
 
 ---
 
-#### **/profile**
+#### `/profile`
 - **Purpose**: View your personal stats, inventory, and rank.
 - **Behavior**:
   - Retrieves user data, including:
@@ -121,7 +182,7 @@ Players interact with the bot to join games, track stats, and compete.
 
 ---
 
-#### **/leaderboard**
+#### `/leaderboard`
 - **Purpose**: See the top players in the server.
 - **Behavior**:
   - Retrieves and displays a leaderboard of the top 10 players based on total wins.
@@ -170,13 +231,13 @@ Players interact with the bot to join games, track stats, and compete.
 Admin uses `/start medieval`.  
 
 ### **Embed Example**:  
-\```
+```
 🚀 **Destiny Battle Starting Soon!**  
 Era: Medieval  
 Progress: [■■■□□□□□□] 30%  
 Players: 5  
 [Join Game] [Leave Game]  
-\```
+```
 
 ### **Battle Example**:  
 - Player 1 attacks Player 2 with a **Golden Mace** (Outcome: 50 damage).  
@@ -184,11 +245,11 @@ Players: 5
 - Combat continues until there’s one winner.  
 
 ### **Winner Announcement**:  
-\```
+```
 🎉 **Victory!**  
 @Username is the winner of the Medieval Era Battle!  
 Reward: @Champion Role  
-\```
+```
 
 ---
 
@@ -207,16 +268,3 @@ Reward: @Champion Role
 - **Customizable Fun**: Adapt the game to fit your server’s unique theme.  
 - **Effortless Setup**: Minimal admin effort to create maximum fun.  
 - **Diverse Eras**: Fresh content with unique items and gameplay styles for every game.  
-
----
-
-## 💌 Support  
-
-If you have any questions or need assistance, please contact us:  
-
-[Contact Form](https://deploynow.site/contact)  
-[Discord Server](https://discord.gg/7zV3EpRM4P)  
-
----
-
-**Transform your Discord server into a battleground with Destiny!**  
